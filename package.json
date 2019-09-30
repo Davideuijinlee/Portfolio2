@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website for David Lee",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w sass/main.scss -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davideuijinlee/Portfolio2.git"
+  },
+  "author": "David Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davideuijinlee/Portfolio2/issues"
+  },
+  "homepage": "https://github.com/Davideuijinlee/Portfolio2#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-mousewheel": "^3.1.13"
+  }
+}
