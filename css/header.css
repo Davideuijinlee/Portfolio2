@@ -5,26 +5,20 @@
   display: flex; }
   .navigation-bar__logo {
     width: 20%;
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    color: white; }
   .navigation-bar__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     width: 80%;
-    background-color: purple;
     list-style-type: none; }
     .navigation-bar__list__item {
       width: 15rem;
       position: relative;
       display: flex;
       justify-content: center; }
-      .navigation-bar__list__item--link {
-        text-decoration: none;
-        color: white; }
-      .navigation-bar__list__item--link:hover {
-        color: blue; }

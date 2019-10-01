@@ -6,6 +6,8 @@
     font-weight: 600;
     display: inline-block;
     transform: translatez(0); }
+  .navigation-item__container--link {
+    text-decoration: none; }
 
 .navigation-item__container:hover {
   cursor: pointer; }
@@ -33,6 +35,8 @@
     animation-delay: 550ms; }
   .navigation-item__container:hover .text--8-letter {
     animation-delay: 630ms; }
+  .navigation-item__container:hover--link {
+    text-decoration: none; }
 
 @keyframes text {
   0% {

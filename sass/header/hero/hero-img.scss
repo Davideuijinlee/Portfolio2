@@ -1,0 +1,42 @@
+.hero-img {
+    height:100vh;
+    width:100vw;
+
+    &--background {
+        height:100vh;
+        width:100vw;
+        background-image:url('../../../assets/images/backgrounds/waterfall-timelapse.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: show-background 2s ease;
+    }
+}
+
+
+@keyframes show-background {
+    0% {
+        position: absolute;
+        height:.5rem;
+        left:50%;
+        width:0;
+        bottom:0;
+    }
+
+    50% {
+        position: absolute;
+        height:.5rem;
+        width:100vw;
+        left:0;
+        bottom:0;
+    }
+
+    100% {
+        position: absolute;
+        height:100vh;
+        width:100vw;
+        bottom:0;
+        left:0;
+    }
+}
+
+

@@ -29,6 +29,8 @@ body {
     font-weight: 600;
     display: inline-block;
     transform: translatez(0); }
+  .navigation-item__container--link {
+    text-decoration: none; }
 
 .navigation-item__container:hover {
   cursor: pointer; }
@@ -56,6 +58,8 @@ body {
     animation-delay: 550ms; }
   .navigation-item__container:hover .text--8-letter {
     animation-delay: 630ms; }
+  .navigation-item__container:hover--link {
+    text-decoration: none; }
 
 @keyframes text {
   0% {
@@ -84,29 +88,54 @@ body {
   display: flex; }
   .navigation-bar__logo {
     width: 20%;
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    color: white; }
   .navigation-bar__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     width: 80%;
-    background-color: purple;
     list-style-type: none; }
     .navigation-bar__list__item {
       width: 15rem;
       position: relative;
       display: flex;
       justify-content: center; }
-      .navigation-bar__list__item--link {
-        text-decoration: none;
-        color: white; }
-      .navigation-bar__list__item--link:hover {
-        color: blue; }
+
+.hero-img {
+  height: 100vh;
+  width: 100vw; }
+  .hero-img--background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../assets/images/backgrounds/waterfall-timelapse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: show-background 2s ease; }
+
+@keyframes show-background {
+  0% {
+    position: absolute;
+    height: .5rem;
+    left: 50%;
+    width: 0;
+    bottom: 0; }
+  50% {
+    position: absolute;
+    height: .5rem;
+    width: 100vw;
+    left: 0;
+    bottom: 0; }
+  100% {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    left: 0; } }
 
 .test {
   display: inline-block;
