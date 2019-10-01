@@ -112,7 +112,7 @@ body {
   .hero-img--background {
     height: 100vh;
     width: 100vw;
-    background-image: url("../../../assets/images/backgrounds/waterfall-timelapse.jpg");
+    background-image: url("../assets/images/backgrounds/waterfall-timelapse.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     animation: show-background 2s ease; }
