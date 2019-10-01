@@ -15,6 +15,10 @@ $letter-length: 8;
         display: inline-block;
         transform: translatez(0);
     }
+
+    &--link {
+        text-decoration:none; 
+    }
 }
 
 
@@ -40,6 +44,10 @@ $letter-length: 8;
         .text--#{$var}-letter {
             animation-delay: 150ms + (80 * ($var - 2))
         }
+    }
+
+    &--link {
+        text-decoration:none; 
     }
 }
 
