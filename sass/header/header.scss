@@ -23,8 +23,11 @@
         list-style-type: none;
 
         &__item {
-            width:10rem;
+            // border:1px solid black;
+            width:15rem;
             position: relative;
+            display: flex;
+            justify-content: center;
 
             &--link {
                 text-decoration:none; 

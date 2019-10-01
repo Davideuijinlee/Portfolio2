@@ -19,8 +19,10 @@
     background-color: purple;
     list-style-type: none; }
     .navigation-bar__list__item {
-      width: 10rem;
-      position: relative; }
+      width: 15rem;
+      position: relative;
+      display: flex;
+      justify-content: center; }
       .navigation-bar__list__item--link {
         text-decoration: none;
         color: white; }

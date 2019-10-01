@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
-@import url("https://fonts.googleapis.com/css?family=Muli");
 html {
   height: 100%;
   font-size: 62.5%;
@@ -22,71 +21,41 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
+.navigation-item__container {
   display: inline-block; }
-  .container .text {
+  .navigation-item__container .text {
     color: #fff;
     font-size: 2rem;
     font-weight: 600;
     display: inline-block;
     transform: translatez(0); }
-    .container .text-w {
-      left: 0rem; }
-    .container .text-a {
-      left: 5.4rem; }
-    .container .text-v {
-      left: 9.6rem; }
-    .container .text-e {
-      left: 13rem; }
 
-.container:hover {
+.navigation-item__container:hover {
   cursor: pointer; }
-  .container:hover .text {
+  .navigation-item__container:hover .text {
     color: #fff;
     font-size: 2rem;
     font-weight: 900;
     display: inline-block;
     animation: text 1050ms ease-in infinite;
     transform: translatez(0); }
-    .container:hover .text-w {
+    .navigation-item__container:hover .text--1-letter {
       transform: translate3d(0, -4rem, 0);
-      animation: text-w 1050ms ease-in infinite; }
-    .container:hover .text-a {
-      left: 5.4rem;
-      animation-delay: 150ms; }
-    .container:hover .text-v {
-      left: 9.6rem;
-      animation-delay: 230ms; }
-    .container:hover .text-e {
-      left: 13rem;
-      animation-delay: 310ms; }
-  .container:hover .coast {
-    position: absolute;
-    left: .3rem;
-    bottom: 0;
-    width: 3.1rem;
-    height: 1.1rem;
-    display: inline-block;
-    animation: coast 2100ms linear infinite;
-    transform: translateZ(0); }
-  .container:hover .wave-rel-wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    perspective: 3rem;
-    perspective-origin: 0%, 50%; }
-  .container:hover .wave {
-    position: absolute;
-    width: 3.1rem;
-    height: .8rem;
-    border-radius: 1.1rem;
-    background: radial-gradient(ellipse at center, #74f1fc 0%, #32e6ff 73%, #15c7fa 100%);
-    display: inline-block;
-    animation: wave 2100ms linear infinite;
-    will-change: width;
-    transform: translateZ(0) scale(0); }
-  .container:hover .delay {
-    animation-delay: 1050ms; }
+      animation: text 1050ms ease-in infinite; }
+  .navigation-item__container:hover .text--2-letter {
+    animation-delay: 150ms; }
+  .navigation-item__container:hover .text--3-letter {
+    animation-delay: 230ms; }
+  .navigation-item__container:hover .text--4-letter {
+    animation-delay: 310ms; }
+  .navigation-item__container:hover .text--5-letter {
+    animation-delay: 390ms; }
+  .navigation-item__container:hover .text--6-letter {
+    animation-delay: 470ms; }
+  .navigation-item__container:hover .text--7-letter {
+    animation-delay: 550ms; }
+  .navigation-item__container:hover .text--8-letter {
+    animation-delay: 630ms; }
 
 @keyframes text {
   0% {
@@ -98,45 +67,15 @@ body {
   100% {
     transform: translate3d(0, 0, 0); } }
 
-@keyframes text-w {
+@keyframes text-first-letter {
   0% {
     transform: translate3d(0, 0, 0); }
   38% {
-    transform: translate3d(0, -2rem, 0); }
+    transform: translate3d(0, 0); }
   69% {
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, -2rem, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
-
-@keyframes coast {
-  0% {
-    transform: translate3d(0, 0, 0); }
-  23% {
-    transform: translate3d(0, 0, 0); }
-  50% {
-    transform: translate3d(5rem, 0, 0); }
-  100% {
-    transform: translate3d(5rem, 0, 0); } }
-
-@keyframes wave {
-  0% {
-    transform: scale(0);
-    width: 1.1rem; }
-  10% {
-    transform: scale(1); }
-  23% {
-    width: .8rem; }
-  32% {
-    width: 2.7rem; }
-  42% {
-    width: 2.2rem;
-    transform: rotateY(0deg) scale(1, 1); }
-  51% {
-    transform: rotateY(90deg) scale(0.6, 0.2); }
-  52% {
-    transform: rotateY(90deg) scale(0); }
-  100% {
-    transform: rotateY(90deg) scale(0); } }
 
 .navigation-bar {
   position: fixed;
@@ -159,8 +98,10 @@ body {
     background-color: purple;
     list-style-type: none; }
     .navigation-bar__list__item {
-      width: 10rem;
-      position: relative; }
+      width: 15rem;
+      position: relative;
+      display: flex;
+      justify-content: center; }
       .navigation-bar__list__item--link {
         text-decoration: none;
         color: white; }
