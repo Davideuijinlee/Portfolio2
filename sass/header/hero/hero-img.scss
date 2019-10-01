@@ -1,42 +1,97 @@
-.hero-img {
-    height:100vh;
-    width:100vw;
+.hero {
+    height: 100vh;
+    width: 100vw;
+    // position: relative;
+    display: flex;
+    align-items: center;
 
-    &--background {
-        height:100vh;
-        width:100vw;
-        background-image:url('../assets/images/backgrounds/waterfall-timelapse.jpg');
+    &__img--background {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('../assets/images/backgrounds/waterfall-timelapse.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         animation: show-background 2s ease;
+        -webkit-animation: show-background 2s ease;
+        -moz-animation: show-background 2s ease;
+        -ms-animation: show-background 2s ease;
+        -o-animation: show-background 2s ease;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 10rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+
+        &--title {
+            z-index: 1;
+            padding-left: 10rem;
+            position: relative;
+
+            animation: show-text 2s ease-in;
+            -webkit-animation: show-text 2s ease-in;
+            -moz-animation: show-text 2s ease-in;
+            -ms-animation: show-text 2s ease-in;
+            -o-animation: show-text 2s ease-in;
+        }
+
+        &--description {
+            z-index: 1;
+            margin-top:-2rem;
+            padding-left: 10rem;
+            position: relative;
+            font-size:4rem;
+            animation: show-text 2s ease-in;
+            -webkit-animation: show-text 2s ease-in;
+            -moz-animation: show-text 2s ease-in;
+            -ms-animation: show-text 2s ease-in;
+            -o-animation: show-text 2s ease-in;
+        }
     }
 }
 
 
 @keyframes show-background {
     0% {
-        position: absolute;
-        height:.5rem;
-        left:50%;
-        width:0;
-        bottom:0;
+        height: .5rem;
+        left: 50%;
+        width: 0;
+        bottom: 0;
     }
 
     50% {
-        position: absolute;
-        height:.5rem;
-        width:100vw;
-        left:0;
-        bottom:0;
+        height: .5rem;
+        width: 100vw;
+        left: 0;
+        bottom: 0;
     }
 
     100% {
-        position: absolute;
-        height:100vh;
-        width:100vw;
-        bottom:0;
-        left:0;
+        height: 100vh;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
     }
 }
 
+@keyframes show-text {
+    0% {
+        top: 150px;
+    }
 
+    50% {
+        top:150px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
