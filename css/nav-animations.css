@@ -35,6 +35,8 @@
     animation-delay: 550ms; }
   .navigation-item__container:hover .text--8-letter {
     animation-delay: 630ms; }
+  .navigation-item__container:hover .text--9-letter {
+    animation-delay: 710ms; }
   .navigation-item__container:hover--link {
     text-decoration: none; }
 

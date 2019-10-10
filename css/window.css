@@ -5,12 +5,11 @@ html {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  overflow-y: hidden;
+  overflow-x: hidden;
   font-family: 'Muli', Helvetica, sans-serif; }
 
 body {
   font-size: 1.6rem;
-  height: 100%;
   white-space: nowrap; }
 
 * {

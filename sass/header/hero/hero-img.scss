@@ -1,14 +1,13 @@
 .hero {
     height: 100vh;
     width: 100vw;
-    // position: relative;
-    display: flex;
     align-items: center;
 
     &__img--background {
-        position: absolute;
         height: 100vh;
         width: 100vw;
+        top: 0;
+        // position: absolute;
         background-image: url('../assets/images/backgrounds/waterfall-timelapse.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,23 +16,17 @@
         -moz-animation: show-background 2s ease;
         -ms-animation: show-background 2s ease;
         -o-animation: show-background 2s ease;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
     }
 
     &__text {
         font-size: 10rem;
         color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        position: absolute;
+        top: 40%;
         overflow: hidden;
 
         &--title {
-            z-index: 1;
-            padding-left: 10rem;
+            font-size: 10rem;
             position: relative;
 
             animation: show-text 2s ease-in;
@@ -44,11 +37,9 @@
         }
 
         &--description {
-            z-index: 1;
-            margin-top:-2rem;
-            padding-left: 10rem;
+            margin-top: -2rem;
             position: relative;
-            font-size:4rem;
+            font-size: 4rem;
             animation: show-text 2s ease-in;
             -webkit-animation: show-text 2s ease-in;
             -moz-animation: show-text 2s ease-in;
@@ -71,24 +62,21 @@
         height: .5rem;
         width: 100vw;
         left: 0;
-        bottom: 0;
     }
 
     100% {
         height: 100vh;
         width: 100vw;
-        bottom: 0;
-        left: 0;
     }
 }
 
 @keyframes show-text {
     0% {
-        top: 150px;
+        top: 250px;
     }
 
     50% {
-        top:150px;
+        top: 250px;
     }
 
     100% {
